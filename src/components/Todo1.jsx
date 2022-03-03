@@ -30,12 +30,13 @@ export const Todo1=()=>{
             {/* <button onClick={handleTodo}>add</button> */}
             <input type="submit" />
             <button onClick={clear}>clear</button>
-            {todo.map((e)=>{
+            {todo.map((element,index)=>{
                 return(
                     <>
                     
-                    <div>task-{e.text}---task-desc{e.desc}</div>
-                    {/* <div>taskDesc-{e}</div> */}
+                    <div key={index}>{element}</div>
+              
+                   
                     </>
 
 )
